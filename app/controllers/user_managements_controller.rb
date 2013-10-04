@@ -1,6 +1,7 @@
 class UserManagementsController < ApplicationController
   before_action :set_user_management, only: [:show, :edit, :update, :destroy]
-
+  before_filter :authenticate_user!
+  
   # GET /user_managements
   # GET /user_managements.json
   def index
