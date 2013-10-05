@@ -33,7 +33,8 @@ group :doc do
 end
 gem 'devise'
 gem 'cancan'
-gem "haml-rails"
+gem "haml"
+gem 'haml-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -55,5 +56,7 @@ end
 
 group :development do
   gem 'hpricot'
-  gem 'ruby_parser'
+  gem 'ruby_parser', '3.1.1'
+  gem 'html2haml'
+  gem "erb2haml"
 end

@@ -54,6 +54,10 @@ GEM
     em-websocket (0.5.0)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.5.3)
+    erb2haml (0.1.4)
+      haml
+      hpricot
+      ruby_parser
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.0.2)
@@ -86,6 +90,11 @@ GEM
       railties (>= 3.1, < 4.1)
     hike (1.2.3)
     hpricot (0.8.6)
+    html2haml (1.0.1)
+      erubis (~> 2.7.0)
+      haml (>= 4.0.0.rc.1)
+      hpricot (~> 0.8.6)
+      ruby_parser (~> 3.1.1)
     http_parser.rb (0.5.3)
     i18n (0.6.5)
     jbuilder (1.5.1)
@@ -155,7 +164,7 @@ GEM
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
       rspec-mocks (~> 2.14.0)
-    ruby_parser (3.2.2)
+    ruby_parser (3.1.1)
       sexp_processor (~> 4.1)
     sass (3.2.11)
     sass-rails (4.0.0)
@@ -203,16 +212,19 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 4.0.0)
   devise
+  erb2haml
   factory_girl_rails
   guard-livereload
   guard-rspec
+  haml
   haml-rails
   hpricot
+  html2haml
   jbuilder (~> 1.2)
   jquery-rails
   rails (= 4.0.0)
   rspec-rails
-  ruby_parser
+  ruby_parser (= 3.1.1)
   sass-rails (~> 4.0.0)
   sdoc
   sqlite3
