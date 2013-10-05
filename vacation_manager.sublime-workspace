@@ -12,10 +12,13 @@
 	"buffers":
 	[
 		{
+			"contents": "require 'spec_helper'\n\ndescribe User do\n  it \"should create set to admin by defaultp\" do\n  	testUser = User.create! :email => \"email@email.com\", :password => \"password\"\n\n  	expect(testUser.role).to eq(\"admin\")\n  end\nend\n",
 			"file": "spec/models/user_spec.rb",
+			"file_size": 219,
+			"file_write_time": 1380860516000000,
 			"settings":
 			{
-				"buffer_size": 228,
+				"buffer_size": 220,
 				"line_ending": "Unix"
 			}
 		},
@@ -23,7 +26,15 @@
 			"file": "app/models/user.rb",
 			"settings":
 			{
-				"buffer_size": 473,
+				"buffer_size": 478,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/ability.rb",
+			"settings":
+			{
+				"buffer_size": 1050,
 				"line_ending": "Unix"
 			}
 		}
@@ -156,7 +167,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -164,15 +175,15 @@
 					"file": "spec/models/user_spec.rb",
 					"settings":
 					{
-						"buffer_size": 228,
+						"buffer_size": 220,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								152,
-								152
+								84,
+								84
 							]
 						],
 						"settings":
@@ -190,20 +201,50 @@
 					"file": "app/models/user.rb",
 					"settings":
 					{
-						"buffer_size": 473,
+						"buffer_size": 478,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								444,
-								444
+								421,
+								421
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/models/ability.rb",
+					"settings":
+					{
+						"buffer_size": 1050,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								281,
+								281
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
