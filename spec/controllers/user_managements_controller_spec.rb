@@ -21,78 +21,78 @@ require 'spec_helper'
 describe UserManagementsController do
 
   # This should return the minimal set of attributes required to create a valid
-  # UserManagement. As you add validations to UserManagement, be sure to
+  # User. As you add validations to User, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) { {  } }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
-  # UserManagementsController. Be sure to keep this updated too.
+  # UsersController. Be sure to keep this updated too.
   let(:valid_session) { {} }
 
   describe "GET index" do
-    it "assigns all user_managements as @user_managements" do
-      user_management = UserManagement.create! valid_attributes
+    it "assigns all users as @user" do
+      user = User.create! valid_attributes
       get :index, {}, valid_session
-      assigns(:user_managements).should eq([user_management])
+      assigns(:user).should eq([user])
     end
   end
 
   describe "GET show" do
-    it "assigns the requested user_management as @user_management" do
-      user_management = UserManagement.create! valid_attributes
-      get :show, {:id => user_management.to_param}, valid_session
-      assigns(:user_management).should eq(user_management)
+    it "assigns the requested useras @user" do
+      user = User.create! valid_attributes
+      get :show, {:id => user.to_param}, valid_session
+      assigns(:user).should eq(user)
     end
   end
 
   describe "GET new" do
-    it "assigns a new user_management as @user_management" do
+    it "assigns a new user as @user" do
       get :new, {}, valid_session
-      assigns(:user_management).should be_a_new(UserManagement)
+      assigns(:user).should be_a_new(User)
     end
   end
 
   describe "GET edit" do
-    it "assigns the requested user_management as @user_management" do
-      user_management = UserManagement.create! valid_attributes
-      get :edit, {:id => user_management.to_param}, valid_session
-      assigns(:user_management).should eq(user_management)
+    it "assigns the requested user as @user" do
+      user = User.create! valid_attributes
+      get :edit, {:id => user.to_param}, valid_session
+      assigns(:user).should eq(user)
     end
   end
 
   describe "POST create" do
     describe "with valid params" do
-      it "creates a new UserManagement" do
+      it "creates a new User" do
         expect {
-          post :create, {:user_management => valid_attributes}, valid_session
-        }.to change(UserManagement, :count).by(1)
+          post :create, {:user => valid_attributes}, valid_session
+        }.to change(User, :count).by(1)
       end
 
-      it "assigns a newly created user_management as @user_management" do
-        post :create, {:user_management => valid_attributes}, valid_session
-        assigns(:user_management).should be_a(UserManagement)
-        assigns(:user_management).should be_persisted
+      it "assigns a newly created user as @user" do
+        post :create, {:user => valid_attributes}, valid_session
+        assigns(:user).should be_a(User)
+        assigns(:user).should be_persisted
       end
 
-      it "redirects to the created user_management" do
-        post :create, {:user_management => valid_attributes}, valid_session
-        response.should redirect_to(UserManagement.last)
+      it "redirects to the created user" do
+        post :create, {:user => valid_attributes}, valid_session
+        response.should redirect_to(User.last)
       end
     end
 
     describe "with invalid params" do
-      it "assigns a newly created but unsaved user_management as @user_management" do
+      it "assigns a newly created but unsaved user as @user" do
         # Trigger the behavior that occurs when invalid params are submitted
-        UserManagement.any_instance.stub(:save).and_return(false)
-        post :create, {:user_management => {  }}, valid_session
-        assigns(:user_management).should be_a_new(UserManagement)
+        User.any_instance.stub(:save).and_return(false)
+        post :create, {:user => {  }}, valid_session
+        assigns(:user).should be_a_new(User)
       end
 
       it "re-renders the 'new' template" do
         # Trigger the behavior that occurs when invalid params are submitted
-        UserManagement.any_instance.stub(:save).and_return(false)
-        post :create, {:user_management => {  }}, valid_session
+        User.any_instance.stub(:save).and_return(false)
+        post :create, {:user => {  }}, valid_session
         response.should render_template("new")
       end
     end
@@ -100,60 +100,60 @@ describe UserManagementsController do
 
   describe "PUT update" do
     describe "with valid params" do
-      it "updates the requested user_management" do
-        user_management = UserManagement.create! valid_attributes
-        # Assuming there are no other user_managements in the database, this
-        # specifies that the UserManagement created on the previous line
+      it "updates the requested user" do
+        user = User.create! valid_attributes
+        # Assuming there are no other users in the database, this
+        # specifies that the User created on the previous line
         # receives the :update_attributes message with whatever params are
         # submitted in the request.
-        UserManagement.any_instance.should_receive(:update).with({ "these" => "params" })
-        put :update, {:id => user_management.to_param, :user_management => { "these" => "params" }}, valid_session
+        User.any_instance.should_receive(:update).with({ "these" => "params" })
+        put :update, {:id => user.to_param, :user => { "these" => "params" }}, valid_session
       end
 
-      it "assigns the requested user_management as @user_management" do
-        user_management = UserManagement.create! valid_attributes
-        put :update, {:id => user_management.to_param, :user_management => valid_attributes}, valid_session
-        assigns(:user_management).should eq(user_management)
+      it "assigns the requested user as @user" do
+        user = User.create! valid_attributes
+        put :update, {:id => user.to_param, :user => valid_attributes}, valid_session
+        assigns(:user).should eq(user)
       end
 
-      it "redirects to the user_management" do
-        user_management = UserManagement.create! valid_attributes
-        put :update, {:id => user_management.to_param, :user_management => valid_attributes}, valid_session
-        response.should redirect_to(user_management)
+      it "redirects to the user" do
+        user = User.create! valid_attributes
+        put :update, {:id => user.to_param, :user => valid_attributes}, valid_session
+        response.should redirect_to(user)
       end
     end
 
     describe "with invalid params" do
-      it "assigns the user_management as @user_management" do
-        user_management = UserManagement.create! valid_attributes
+      it "assigns the user as @user" do
+        user = User.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
-        UserManagement.any_instance.stub(:save).and_return(false)
-        put :update, {:id => user_management.to_param, :user_management => {  }}, valid_session
-        assigns(:user_management).should eq(user_management)
+        User.any_instance.stub(:save).and_return(false)
+        put :update, {:id => user.to_param, :user => {  }}, valid_session
+        assigns(:user).should eq(user)
       end
 
       it "re-renders the 'edit' template" do
-        user_management = UserManagement.create! valid_attributes
+        user = User.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
-        UserManagement.any_instance.stub(:save).and_return(false)
-        put :update, {:id => user_management.to_param, :user_management => {  }}, valid_session
+        User.any_instance.stub(:save).and_return(false)
+        put :update, {:id => user.to_param, :user => {  }}, valid_session
         response.should render_template("edit")
       end
     end
   end
 
   describe "DELETE destroy" do
-    it "destroys the requested user_management" do
-      user_management = UserManagement.create! valid_attributes
+    it "destroys the requested user" do
+      user = User.create! valid_attributes
       expect {
-        delete :destroy, {:id => user_management.to_param}, valid_session
-      }.to change(UserManagement, :count).by(-1)
+        delete :destroy, {:id => user.to_param}, valid_session
+      }.to change(User, :count).by(-1)
     end
 
-    it "redirects to the user_managements list" do
-      user_management = UserManagement.create! valid_attributes
-      delete :destroy, {:id => user_management.to_param}, valid_session
-      response.should redirect_to(user_managements_url)
+    it "redirects to the users list" do
+      user = User.create! valid_attributes
+      delete :destroy, {:id => user.to_param}, valid_session
+      response.should redirect_to(users_url)
     end
   end
 
