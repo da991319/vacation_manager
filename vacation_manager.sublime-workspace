@@ -12,52 +12,47 @@
 	"buffers":
 	[
 		{
-			"file": "Gemfile",
+			"file": "spec/spec_helper.rb",
 			"settings":
 			{
-				"buffer_size": 1494,
+				"buffer_size": 1646,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/user_managements/_form.html.haml",
+			"file": "app/models/user.rb",
 			"settings":
 			{
-				"buffer_size": 296,
+				"buffer_size": 478,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/user_managements/new.html.haml",
+			"contents": "Remote:   origin @ git@github.com:da991319/vacation_manager.git\nLocal:    user_management ~/project/vacation_manager\nHead:     2389f8a try fixing test\n\n\nNothing to commit (working directory clean)\n\n# Movement:\n#    r = refresh status\n#    1-5 = jump to section\n#    n = next item, N = next section\n#    p = previous item, P = previous section\n#\n# Staging:\n#    s = stage file/section, S = stage all unstaged files\n#    ctrl+shift+s = stage all unstaged and untracked files\n#    u = unstage file/section, U = unstage all files\n#    k = discard file/section, K = discard everything\n#\n# Commit:\n#    c = commit, C = commit -a (add unstaged)\n#    ctrl+shift+c = commit --amend (amend previous commit)\n#\n# Other:\n#    i = ignore file, I = ignore pattern\n#    enter = open file\n#    d = view diff\n#\n# Stashes:\n#    a = apply stash, A = pop stash\n#    z = create stash from worktree",
 			"settings":
 			{
-				"buffer_size": 69,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "spec/controllers/user_managements_controller_spec.rb",
-			"settings":
-			{
-				"buffer_size": 5823,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/user_managements_controller.rb",
-			"settings":
-			{
-				"buffer_size": 1919,
-				"line_ending": "Unix"
+				"buffer_size": 875,
+				"line_ending": "Unix",
+				"name": "*git-status*: vacation_manager",
+				"read_only": true,
+				"scratch": true
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 180.0,
 		"selected_items":
 		[
+			[
+				"gitpu",
+				"Git: Push"
+			],
+			[
+				"git",
+				"Git: Status"
+			],
 			[
 				"pu",
 				"Git: Push"
@@ -77,10 +72,6 @@
 			[
 				"Package Control: li",
 				"Package Control: List Packages"
-			],
-			[
-				"gitpu",
-				"Git: Push"
 			],
 			[
 				"gitco",
@@ -109,10 +100,6 @@
 			[
 				"gitc",
 				"Git: Commit"
-			],
-			[
-				"git",
-				"SublimeGit: Documentation"
 			],
 			[
 				"g",
@@ -144,18 +131,23 @@
 	},
 	"file_history":
 	[
-		"/home/regis/project/vacation_manager/spec/models/user_spec.rb",
+		"/home/regis/project/vacation_manager/config/routes.rb",
+		"/home/regis/project/vacation_manager/app/controllers/user_managements_controller.rb",
 		"/home/regis/project/vacation_manager/spec/controllers/user_managements_controller_spec.rb",
+		"/home/regis/project/vacation_manager/spec/factories/users.rb",
+		"/home/regis/project/vacation_manager/spec/support/controller_macros.rb",
+		"/home/regis/project/vacation_manager/Gemfile",
+		"/home/regis/project/vacation_manager/spec/Factories.rb",
+		"/home/regis/project/vacation_manager/app/views/user_managements/_form.html.haml",
+		"/home/regis/project/vacation_manager/app/views/user_managements/new.html.haml",
+		"/home/regis/project/vacation_manager/spec/models/user_spec.rb",
 		"/home/regis/project/vacation_manager/app/views/user_managements/index.html.erb",
 		"/home/regis/project/vacation_manager/spec/views/user_managements/edit.html.haml_spec.rb",
 		"/home/regis/project/vacation_manager/spec/views/user_managements/index.html.erb_spec.rb",
 		"/home/regis/project/vacation_manager/lib/tasks/hamlify.rake",
-		"/home/regis/project/vacation_manager/Gemfile",
-		"/home/regis/project/vacation_manager/app/controllers/user_managements_controller.rb",
 		"/home/regis/project/vacation_manager/app/models/user.rb",
 		"/home/regis/project/vacation_manager/app/models/ability.rb",
 		"/home/regis/project/vacation_manager/app/views/devise/registrations/new.html.erb",
-		"/home/regis/project/vacation_manager/config/routes.rb",
 		"/home/regis/project/vacation_manager/app/controllers/user_management_controller.rb",
 		"/home/regis/project/vacation_manager/app/models/organization.rb",
 		"/home/regis/project/vacation_manager/app/models/department.rb",
@@ -201,23 +193,22 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Gemfile",
+					"file": "spec/spec_helper.rb",
 					"settings":
 					{
-						"buffer_size": 1494,
+						"buffer_size": 1646,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1454,
-								1454
+								951,
+								951
 							]
 						],
 						"settings":
@@ -227,30 +218,35 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 306.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"sheets":
+			[
 				{
 					"buffer": 1,
-					"file": "app/views/user_managements/_form.html.haml",
+					"file": "app/models/user.rb",
 					"settings":
 					{
-						"buffer_size": 296,
+						"buffer_size": 478,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								108,
-								108
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/.fr-1chAho/sublime-text-haml-sass-master/Ruby Haml/Ruby Haml.tmLanguage",
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -262,85 +258,28 @@
 				},
 				{
 					"buffer": 2,
-					"file": "app/views/user_managements/new.html.haml",
 					"settings":
 					{
-						"buffer_size": 69,
+						"buffer_size": 875,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								12,
-								12
+								153,
+								153
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/.fr-1chAho/sublime-text-haml-sass-master/Ruby Haml/Ruby Haml.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "spec/controllers/user_managements_controller_spec.rb",
-					"settings":
-					{
-						"buffer_size": 5823,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1089,
-								1089
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/User/RSpec.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 306.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 4,
-					"file": "app/controllers/user_managements_controller.rb",
-					"settings":
-					{
-						"buffer_size": 1919,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								230,
-								230
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"draw_white_space": "none",
+							"git_repo": "/home/regis/project/vacation_manager",
+							"git_status": true,
+							"git_view": "status",
+							"syntax": "Packages/SublimeGit/SublimeGit Status.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

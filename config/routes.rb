@@ -5,7 +5,7 @@ VacationManager::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'user_managements#index'
+  #root 'user_managements#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
