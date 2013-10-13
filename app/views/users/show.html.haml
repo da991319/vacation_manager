@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Index:
+  = @user.index
+%p
+  %b Edit:
+  = @user.edit
+%p
+  %b Show:
+  = @user.show
+%p
+  %b Update:
+  = @user.update
+%p
+  %b Add:
+  = @user.add
+
+= link_to 'Edit', edit_user_path(@user)
+\|
+= link_to 'Back', users_path

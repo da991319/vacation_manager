@@ -1,11 +1,18 @@
 VacationManager::Application.routes.draw do
+  # get "users/index"
+  # get "users/show"
+  # get "users/edit"
+  # get "users/update"
+  # get "users/add"
   devise_for :users
-  resources :user_managements
+  get "users/add" => 'users#add', as: 'add_user'
+  resources :users, only: [:index, :show, :edit, :update]
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  #root 'user_managements#index'
+  root 'users#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
