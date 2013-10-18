@@ -4,10 +4,10 @@ VacationManager::Application.routes.draw do
   # get "users/edit"
   # get "users/update"
   # get "users/add"
-  devise_for :users
-  get "users/add" => 'users#add', as: 'add_user'
-  resources :users, only: [:index, :show, :edit, :update]
 
+  get "users/add" => 'users#add', as: 'add_user'
+  resources :users, only: [:index, :show, :edit, :update, :create]
+  devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
