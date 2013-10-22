@@ -34,6 +34,12 @@ end
 
 gem "haml"
 gem 'haml-rails'
+group :development do
+  gem 'hpricot'
+  gem 'ruby_parser', '3.1.1'
+  gem 'html2haml'
+  gem "erb2haml"
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
