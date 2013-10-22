@@ -23,7 +23,15 @@
 			"file": "spec/controllers/users_controller_spec.rb",
 			"settings":
 			{
-				"buffer_size": 5983,
+				"buffer_size": 6023,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 1854,
 				"line_ending": "Unix"
 			}
 		},
@@ -36,10 +44,10 @@
 			}
 		},
 		{
-			"contents": "Remote:   origin @ git@github.com:da991319/vacation_manager.git\nLocal:    user_management ~/project/vacation_manager\nHead:     6e79a50 trying to manage user via user controller for admin\n\n\nChanges:\n	Modified   vacation_manager.sublime-workspace\n\n\n# Movement:\n#    r = refresh status\n#    1-5 = jump to section\n#    n = next item, N = next section\n#    p = previous item, P = previous section\n#\n# Staging:\n#    s = stage file/section, S = stage all unstaged files\n#    ctrl+shift+s = stage all unstaged and untracked files\n#    u = unstage file/section, U = unstage all files\n#    k = discard file/section, K = discard everything\n#\n# Commit:\n#    c = commit, C = commit -a (add unstaged)\n#    ctrl+shift+c = commit --amend (amend previous commit)\n#\n# Other:\n#    i = ignore file, I = ignore pattern\n#    enter = open file\n#    d = view diff\n#\n# Stashes:\n#    a = apply stash, A = pop stash\n#    z = create stash from worktree",
+			"contents": "Remote:   origin @ git@github.com:da991319/vacation_manager.git\nLocal:    user_management ~/project/vacation_manager\nHead:     7ecef69 still trying to fix users controller tests\n\n\nNothing to commit (working directory clean)\n\n# Movement:\n#    r = refresh status\n#    1-5 = jump to section\n#    n = next item, N = next section\n#    p = previous item, P = previous section\n#\n# Staging:\n#    s = stage file/section, S = stage all unstaged files\n#    ctrl+shift+s = stage all unstaged and untracked files\n#    u = unstage file/section, U = unstage all files\n#    k = discard file/section, K = discard everything\n#\n# Commit:\n#    c = commit, C = commit -a (add unstaged)\n#    ctrl+shift+c = commit --amend (amend previous commit)\n#\n# Other:\n#    i = ignore file, I = ignore pattern\n#    enter = open file\n#    d = view diff\n#\n# Stashes:\n#    a = apply stash, A = pop stash\n#    z = create stash from worktree",
 			"settings":
 			{
-				"buffer_size": 924,
+				"buffer_size": 902,
 				"line_ending": "Unix",
 				"name": "*git-status*: vacation_manager",
 				"read_only": true,
@@ -239,15 +247,15 @@
 					"file": "spec/controllers/users_controller_spec.rb",
 					"settings":
 					{
-						"buffer_size": 5983,
+						"buffer_size": 6023,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3281,
-								3281
+								2697,
+								2697
 							]
 						],
 						"settings":
@@ -256,8 +264,36 @@
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
+						"translation.x": 22.0,
+						"translation.y": 1122.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 1854,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								287,
+								287
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
 						"translation.x": 0.0,
-						"translation.y": 816.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -265,11 +301,11 @@
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "app/controllers/users_controller.rb",
 					"settings":
 					{
@@ -280,8 +316,8 @@
 						"selection":
 						[
 							[
-								303,
-								303
+								693,
+								693
 							]
 						],
 						"settings":
@@ -291,24 +327,24 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 102.0,
+						"translation.y": 153.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"settings":
 					{
-						"buffer_size": 924,
+						"buffer_size": 902,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								189,
-								189
+								180,
+								180
 							]
 						],
 						"settings":

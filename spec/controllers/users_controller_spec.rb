@@ -116,7 +116,6 @@ describe UsersController do
         assigns(:user).should eq(user)
       end
       
-
       it "redirects to the user" do
         
         user = FactoryGirl.create(:user)
