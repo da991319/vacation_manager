@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-VacationManager::Application.config.secret_key_base = '694185f9a7c3c01992aa41da34f89c43e7f91f3d4e573af06844ffa47e4b57b18cc047028d061d67cb474bbbcceecc63d03f24636e6879c585f45bbdbbc8283a'
+VacationManager::Application.config.secret_key_base = '868a6126a42b0768707793c674006e18046309ffd26f35bcdde28cf4d76cd4c25690d08ece2466e810d09d857d467b05b1158d3b399517329307be0e1856ffb9'
