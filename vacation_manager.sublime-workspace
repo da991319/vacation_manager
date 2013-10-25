@@ -3,31 +3,19 @@
 	{
 		"selected_items":
 		[
+			[
+				"resour",
+				"resource"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/models/user.rb",
+			"file": "Gemfile",
 			"settings":
 			{
-				"buffer_size": 329,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/organization.rb",
-			"settings":
-			{
-				"buffer_size": 61,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/department.rb",
-			"settings":
-			{
-				"buffer_size": 59,
+				"buffer_size": 1471,
 				"line_ending": "Unix"
 			}
 		}
@@ -35,16 +23,80 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 348.0,
 		"selected_items":
 		[
 			[
+				"gitp",
+				"Git: Push"
+			],
+			[
 				"git",
-				"Git: Commit"
+				"Git: Status"
+			],
+			[
+				"gs",
+				"Git: Status"
+			],
+			[
+				"gi",
+				"Git: Status"
+			],
+			[
+				"gitpu",
+				"Git: Push Current Branch"
 			],
 			[
 				"gits",
 				"Git: Status"
+			],
+			[
+				"gitch",
+				"Git: Checkout New Branch"
+			],
+			[
+				"pu",
+				"Git: Push"
+			],
+			[
+				"gitq",
+				"Git: Quick Commit"
+			],
+			[
+				"Package Control: li",
+				"Package Control: List Packages"
+			],
+			[
+				"gitco",
+				"Git: Commit"
+			],
+			[
+				"gitb",
+				"Git: Checkout New Branch"
+			],
+			[
+				"gitst",
+				"Git: Status"
+			],
+			[
+				"gitre",
+				"Git: Remote"
+			],
+			[
+				"gita",
+				"Git: Add Remote"
+			],
+			[
+				"gitdoc",
+				"SublimeGit: Documentation"
+			],
+			[
+				"gitc",
+				"Git: Commit"
+			],
+			[
+				"g",
+				"Git: Checkout"
 			],
 			[
 				"Package Control: ",
@@ -68,16 +120,38 @@
 	},
 	"file_history":
 	[
+		"/home/regis/project/vacation_manager/Gemfile",
+		"/home/regis/project/vacation_manager/config/routes.rb",
+		"/home/regis/project/vacation_manager/app/controllers/users_controller.rb",
+		"/home/regis/project/vacation_manager/spec/controllers/users_controller_spec.rb",
+		"/home/regis/project/vacation_manager/app/views/users/_form.html.haml",
+		"/home/regis/project/vacation_manager/spec/spec_helper.rb",
+		"/home/regis/project/vacation_manager/app/views/users/index.html.haml",
+		"/home/regis/project/vacation_manager/app/models/user.rb",
+		"/home/regis/project/vacation_manager/app/controllers/user_managements_controller.rb",
+		"/home/regis/project/vacation_manager/spec/controllers/user_managements_controller_spec.rb",
+		"/home/regis/project/vacation_manager/spec/factories/users.rb",
+		"/home/regis/project/vacation_manager/spec/support/controller_macros.rb",
+		"/home/regis/project/vacation_manager/spec/Factories.rb",
+		"/home/regis/project/vacation_manager/app/views/user_managements/_form.html.haml",
+		"/home/regis/project/vacation_manager/app/views/user_managements/new.html.haml",
+		"/home/regis/project/vacation_manager/spec/models/user_spec.rb",
+		"/home/regis/project/vacation_manager/app/views/user_managements/index.html.erb",
+		"/home/regis/project/vacation_manager/spec/views/user_managements/edit.html.haml_spec.rb",
+		"/home/regis/project/vacation_manager/spec/views/user_managements/index.html.erb_spec.rb",
+		"/home/regis/project/vacation_manager/lib/tasks/hamlify.rake",
+		"/home/regis/project/vacation_manager/app/models/ability.rb",
+		"/home/regis/project/vacation_manager/app/views/devise/registrations/new.html.erb",
+		"/home/regis/project/vacation_manager/app/controllers/user_management_controller.rb",
+		"/home/regis/project/vacation_manager/app/models/organization.rb",
+		"/home/regis/project/vacation_manager/app/models/department.rb",
 		"/home/regis/project/vacation_manager/db/migrate/20130929043624_add_department_id_to_users.rb",
 		"/home/regis/project/vacation_manager/db/migrate/20130928052654_add_fields_to_users.rb",
-		"/home/regis/project/vacation_manager/app/models/user.rb",
-		"/home/regis/project/vacation_manager/Gemfile",
-		"/home/regis/project/vacation_manager/config/initializers/devise.rb",
-		"/home/regis/project/vacation_manager/spec/spec_helper.rb"
+		"/home/regis/project/vacation_manager/config/initializers/devise.rb"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -91,6 +165,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"UserManagement",
+			"user_management"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -98,6 +174,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"User",
+			"user"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -108,23 +186,23 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/models/user.rb",
+					"file": "Gemfile",
 					"settings":
 					{
-						"buffer_size": 329,
+						"buffer_size": 1471,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								301,
-								301
+								1215,
+								1215
 							]
 						],
 						"settings":
@@ -132,59 +210,7 @@
 							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/models/organization.rb",
-					"settings":
-					{
-						"buffer_size": 61,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								56,
-								56
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/models/department.rb",
-					"settings":
-					{
-						"buffer_size": 59,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								58,
-								58
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 255.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -235,6 +261,14 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"output.git-checkout":
+	{
+		"height": 112.0
+	},
 	"output.git-commit":
 	{
 		"height": 112.0
@@ -243,9 +277,13 @@
 	{
 		"height": 112.0
 	},
+	"output.git-push":
+	{
+		"height": 112.0
+	},
 	"replace":
 	{
-		"height": 0.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -253,6 +291,30 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"ge",
+				"Gemfile"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"usermaninde",
+				"spec/views/user_managements/index.html.erb_spec.rb"
+			],
+			[
+				"usermanain",
+				"app/views/user_managements/index.html.erb"
+			],
+			[
+				"user",
+				"spec/views/user_managements/index.html.erb_spec.rb"
+			],
+			[
+				"rou",
+				"config/routes.rb"
+			]
 		],
 		"width": 0.0
 	},
