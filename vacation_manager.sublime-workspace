@@ -8,27 +8,14 @@
 	"buffers":
 	[
 		{
-			"file": "app/models/user.rb",
+			"contents": "Remote:   origin @ git@github:da991319/vacation_manager.git\nLocal:    sorcery_version ~/Documents/Workspace/vacation_manager\nHead:     7035d78 add rspec, guard and reload\n\n\nStaged changes:\n	Added      Guardfile\n\n\n# Movement:\n#    r = refresh status\n#    1-5 = jump to section\n#    n = next item, N = next section\n#    p = previous item, P = previous section\n#\n# Staging:\n#    s = stage file/section, S = stage all unstaged files\n#    ctrl+shift+s = stage all unstaged and untracked files\n#    u = unstage file/section, U = unstage all files\n#    k = discard file/section, K = discard everything\n#\n# Commit:\n#    c = commit, C = commit -a (add unstaged)\n#    ctrl+shift+c = commit --amend (amend previous commit)\n#\n# Other:\n#    i = ignore file, I = ignore pattern\n#    enter = open file\n#    d = view diff\n#\n# Stashes:\n#    a = apply stash, A = pop stash\n#    z = create stash from worktree",
 			"settings":
 			{
-				"buffer_size": 329,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/organization.rb",
-			"settings":
-			{
-				"buffer_size": 61,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/department.rb",
-			"settings":
-			{
-				"buffer_size": 59,
-				"line_ending": "Unix"
+				"buffer_size": 890,
+				"line_ending": "Unix",
+				"name": "*git-status*: vacation_manager",
+				"read_only": true,
+				"scratch": true
 			}
 		}
 	],
@@ -39,12 +26,52 @@
 		"selected_items":
 		[
 			[
-				"git",
-				"Git: Commit"
+				"gp",
+				"Git: Push"
+			],
+			[
+				"g",
+				"Git: Push"
+			],
+			[
+				"gi",
+				"Git: Push"
+			],
+			[
+				"gip",
+				"Git: Push"
+			],
+			[
+				"gitp",
+				"Git: Push"
+			],
+			[
+				"git che",
+				"Git: Checkout"
+			],
+			[
+				"git pu",
+				"Git: Pull"
+			],
+			[
+				"git ch",
+				"Git: Checkout"
+			],
+			[
+				"gitf",
+				"Git: Fetch"
+			],
+			[
+				"gitc",
+				"Git: Checkout New Branch"
 			],
 			[
 				"gits",
 				"Git: Status"
+			],
+			[
+				"git",
+				"Git: Commit"
 			],
 			[
 				"Package Control: ",
@@ -68,6 +95,10 @@
 	},
 	"file_history":
 	[
+		"/home/regis/Documents/Workspace/vacation_manager/app/models/user.rb",
+		"/home/regis/Documents/Workspace/vacation_manager/app/models/organization.rb",
+		"/home/regis/Documents/Workspace/vacation_manager/app/models/department.rb",
+		"/home/regis/Documents/Workspace/vacation_manager/spec/models/user_spec.rb",
 		"/home/regis/project/vacation_manager/db/migrate/20130929043624_add_department_id_to_users.rb",
 		"/home/regis/project/vacation_manager/db/migrate/20130928052654_add_fields_to_users.rb",
 		"/home/regis/project/vacation_manager/app/models/user.rb",
@@ -108,80 +139,33 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/models/user.rb",
 					"settings":
 					{
-						"buffer_size": 329,
+						"buffer_size": 890,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								301,
-								301
+								172,
+								172
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/models/organization.rb",
-					"settings":
-					{
-						"buffer_size": 61,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								56,
-								56
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/models/department.rb",
-					"settings":
-					{
-						"buffer_size": 59,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								58,
-								58
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
+							"draw_white_space": "none",
+							"git_repo": "/home/regis/Documents/Workspace/vacation_manager",
+							"git_status": true,
+							"git_view": "status",
+							"syntax": "Packages/SublimeGit/SublimeGit Status.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -189,11 +173,6 @@
 					},
 					"type": "text"
 				}
-			]
-		},
-		{
-			"sheets":
-			[
 			]
 		}
 	],
@@ -214,18 +193,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -239,7 +211,19 @@
 	{
 		"height": 112.0
 	},
+	"output.git-fetch":
+	{
+		"height": 112.0
+	},
 	"output.git-init":
+	{
+		"height": 112.0
+	},
+	"output.git-pull":
+	{
+		"height": 112.0
+	},
+	"output.git-push":
 	{
 		"height": 112.0
 	},
