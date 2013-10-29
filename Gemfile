@@ -34,6 +34,7 @@ end
 
 gem "haml"
 gem 'haml-rails'
+gem 'sorcery'
 group :development do
   gem 'hpricot'
   gem 'ruby_parser', '3.1.1'
