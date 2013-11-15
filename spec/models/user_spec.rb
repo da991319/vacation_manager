@@ -28,4 +28,5 @@ describe User do
   	user2.should have(1).error_on(:email)
   	user2.errors.messages[:email].should include("has already been taken")  	
   end
+  
 end
