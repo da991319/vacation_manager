@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131106200628) do
+ActiveRecord::Schema.define(version: 20131115113755) do
 
   create_table "departments", force: true do |t|
     t.string   "name"
@@ -41,6 +41,8 @@ ActiveRecord::Schema.define(version: 20131106200628) do
     t.datetime "reset_password_email_sent_at"
     t.integer  "department_id"
     t.integer  "organization_id"
+    t.string   "firstname"
+    t.string   "lastname"
   end
 
   add_index "users", ["department_id"], name: "index_users_on_department_id"
